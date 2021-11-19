@@ -77,7 +77,8 @@ define( 'WP_DEBUG', false );
  * configure HTTPS
  */
 define('FORCE_SSL_ADMIN', true);
-define('WP_HOME', 'https://' . $_SERVER['HTTP_HOST']);
+define('WP_HOME', 'https://' . $_SERVER['HTTP_HOST'] . '/');
+define('WP_SITEURL', 'https://' . $_SERVER['HTTP_HOST'] . '/');
 $_SERVER['HTTPS']       = 'on';
 $_SERVER['SERVER_PORT'] = 443;
 
